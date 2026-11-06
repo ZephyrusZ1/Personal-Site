@@ -1,0 +1,1 @@
+This is a personal site i made based on tutorial from w3schools.

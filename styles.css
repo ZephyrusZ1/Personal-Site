@@ -1,5 +1,4 @@
 body{
-
 background-color: black;
 font-family: 'Times New Roman', Times, serif;
 color: whitesmoke;
@@ -7,20 +6,25 @@ text-align: center;
 vertical-align: middle;
 .header{
 text-align: center;
-
 }
-
-.top-bar button{
-border: 4px solid rgb(249, 245, 245);
-background-color: aqua;
+.top-bar a{
+display:inline-block ;
+text-align:center;
+text-decoration:none ;
+border: 4px solid aliceblue;
+background-color: rgb(36, 89, 224);
 color: whitesmoke;
-font-size: 24px;
+font-size: 20px;
 font-weight: 200;
-padding: 8px 12px;
-border-radius: 10px;
-
-
-
+padding: 8px 12px 12px;
+border-radius:10px;
+margin-left:8px ;
+margin-right:8px;
+transition:0.6s ;
+}
+.top-bar a:hover{
+background-color: aliceblue;
+color: black;
 }
 .project-container{
 display:flex ;
@@ -30,27 +34,45 @@ margin-left:8px;
 margin-right:8px;
 justify-content: center;
 align-items: center;
-
-
 }
 .card{
 background-color: aliceblue;
-border:8px solid black;
+border:8px solid aliceblue;
 padding:12px ;
 display: flex;
 flex-direction: column;
 align-items: center;
-
-
+border-radius:5% ;
 }
 .card img{
 width:360px;
 height:360px;
 object-fit:cover ;
 background-color: black;
-border:12px solid aliceblue ;
+border:8px solid aliceblue ;
 padding:8px ;
 padding-bottom:120px;
-
-
+}
+.card a{
+display:flex ;
+justify-content:center;
+align-items:center;
+text-decoration:none ;
+height:62px ;
+width:128px ;
+border: 4px solid violet ;
+font-size:16px ;
+background-color:white ;
+color: black;
+border-radius:12px ;
+transition:0.6s ;
+}
+.card a:hover{
+background-color: violet ;
+color:white ;
+}
+.card:hover{
+box-shadow:12px 20px 28px cyan;
+transform: translateY(-18px);
+}
 }
