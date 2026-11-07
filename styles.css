@@ -1,35 +1,64 @@
+html{
+scroll-behavior:smooth;
+scroll-snap-type: y mandatory;
+}
 body{
-background-color: black;
+background-color: rgba(18, 18, 18, 1);
 font-family: 'Times New Roman', Times, serif;
 color: whitesmoke;
 text-align: center;
 vertical-align: middle;
+
+.note{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+min-height:100vh;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+align-items:center;
+text-align:center ;
+max-width:60ch ;
+margin: auto;
+font-size: 32px;
+
+}
 .header{
 text-align: center;
+}
+.top-bar{
+scroll-snap-align:start;
+border:0px solid rgba(30, 30, 30, 0.4);
+background-color: rgba(30, 30, 30, 0.4);
+
+
 }
 .top-bar a{
 display:inline-block ;
 text-align:center;
 text-decoration:none ;
-border: 4px solid aliceblue;
-background-color: rgb(36, 89, 224);
-color: whitesmoke;
-font-size: 20px;
-font-weight: 200;
-padding: 8px 12px 12px;
+border: 4px solid rgb(67, 242, 242);
+background-color: aliceblue;
+color: rgb(67, 242, 242);
+font-size: 22px;
+font-weight: 400;
+padding: 4px 16px;
 border-radius:10px;
 margin-left:8px ;
 margin-right:8px;
 transition:0.6s ;
 }
 .top-bar a:hover{
-background-color: aliceblue;
-color: black;
+background-color: rgb(67, 242, 242);
+color: white;
 }
 .project-container{
+scroll-snap-align:start ;
 display:flex ;
 flex-wrap:wrap ;
 gap:20px ;
+margin-top:80px ;
 margin-left:8px;
 margin-right:8px;
 justify-content: center;
@@ -47,11 +76,12 @@ border-radius:5% ;
 .card img{
 width:360px;
 height:360px;
-object-fit:cover ;
+object-fit: cover;
 background-color: black;
 border:8px solid aliceblue ;
 padding:8px ;
 padding-bottom:120px;
+outline:4px solid violet;
 }
 .card a{
 display:flex ;
@@ -65,14 +95,16 @@ font-size:16px ;
 background-color:white ;
 color: black;
 border-radius:12px ;
-transition:0.6s ;
+transition:0.6s;
+margin-top:18px;
 }
 .card a:hover{
-background-color: violet ;
+background-color: violet;
 color:white ;
 }
 .card:hover{
-box-shadow:12px 20px 28px cyan;
+box-shadow: 0px 6px 8px 5px violet;
 transform: translateY(-18px);
+
 }
 }
